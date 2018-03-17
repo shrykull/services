@@ -1,0 +1,7 @@
+spring:
+  server:
+    port: 8080
+
+management:
+  server:
+    port: 8081
