@@ -1,5 +1,5 @@
 #!/bin/bash
-git pull --ff-only
+git pull --force
 
 pushd decide
 ./gradlew build
