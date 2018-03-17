@@ -3,7 +3,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'net.shrye'
-version = '0.1.0-SNAPSHOT'
+version = '1.0-SNAPSHOT'
 description = 'A random assortment of tech demos, one more useless than the other'
 
 buildscript {

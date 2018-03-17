@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-ADD build/libs/decide-0.1.0.jar app.jar
+ADD build/libs/decide-1.0-SNAPSHOT.jar app.jar
 VOLUME ["/application.yml"]
 EXPOSE 22443 33443
 ENV JAVA_OPTS=""
