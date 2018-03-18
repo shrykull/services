@@ -1,6 +1,7 @@
 package net.shrye.services.decide
 
 import org.springframework.lang.NonNull
+import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
 
 @RestController
@@ -14,7 +15,7 @@ class DecideController {
     }
 
     @PostMapping(consumes = 'application/json', produces = 'application/json')
-    static DecideOutput decide(@NonNull @RequestBody DecideInput input) {
+    static DecideOutput decide(@NonNull @Validated @RequestBody DecideInput input) {
         return Decider.decide(input)
     }
 }

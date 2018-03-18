@@ -10,6 +10,9 @@ class Decider {
         if (!input.question) {
             input.question = ''
         }
+        if (!input.identity) {
+            throw new IllegalArgumentException('Illegal Argiment: No identity was given.');
+        }
         Matcher r = (input.question =~ /(".+?"|(?<!").+?(?!"))(?:\s+|$)/)
         long c = asciicount(input.question) + asciicount(now().format(ofPattern('yyyy/MM/dd')))
         if (r.size() >= 2) {
